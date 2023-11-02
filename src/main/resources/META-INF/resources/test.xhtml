@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html;charset=UTF-8" encoding="UTF-8">
+        <h:head>
+
+        </h:head>
+        <h:body>
+            <p:textEditor />
+        </h:body>
+    </f:view>
+    
+    <div class="card">
+    <h5>Basic</h5>
+    <p:inputText/>
+
+    <h5>Floating Label</h5>
+    <span class="ui-float-label">
+       <p:inputText id="float-input" value="#{inputTextView.text}"/>
+       <p:outputLabel for="@previous" value="nom d'utilisateur"/>
+   </span>
+
+    <h5>Left Icon</h5>
+    <span class="ui-input-icon-left">
+        <i class="pi pi-search" />
+        <p:inputText placeholder="Search" />
+    </span>
+
+    <h5>Right Icon</h5>
+    <span class="ui-input-icon-right">
+        <i class="pi pi-spin pi-spinner" />
+        <p:inputText />
+    </span>
+
+    <h5>Help Text</h5>
+    <div class="field">
+        <p:outputLabel for="username1" styleClass="block">Username</p:outputLabel>
+        <p:inputText id="username1" styleClass="block"/>
+        <small class="block">Enter your username to reset your password.</small>
+    </div>
+
+    <h5>Invalid</h5>
+    <div class="field">
+        <p:outputLabel for="username2" styleClass="block">Username</p:outputLabel>
+        <p:inputText id="username2" styleClass="block ui-state-error"/>
+        <small class="block ui-state-error">Username is not available.</small>
+    </div>
+
+    <h5>Disabled</h5>
+    <p:inputText disabled="true" />
+    
+    <p:button value="Success" styleClass="ui-button-success" />    
+    <div class="card">
+        <p:carousel circular="true" paginator="false">
+            <f:facet name="header">
+                <h5>Tabs</h5>
+            </f:facet>
+            <p:tab>
+                <p class="m-0 p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </p:tab>
+            <p:tab>
+                <p class="m-0 p-3">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+                </p>
+            </p:tab>
+            <p:tab>
+                <p class="m-0 p-3">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                    et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                </p>
+            </p:tab>
+        </p:carousel>
+    </div>
+                <div class="field col-12 md:col-4">
+                <h5>Disabled</h5>
+                <div class="knob-container ui-corner-all">
+                    <p:knob disabled="true" value="10"/>
+                </div>
+            </div>
+</div>
+
+
+</html>
