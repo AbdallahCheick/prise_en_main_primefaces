@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+
+
+    <f:view contentType="text/html;charset=UTF-8" encoding="UTF-8">
+        <h:head>
+			
+        </h:head>
+        <h:body >
+		<div class="card">
+		    <h:form>
+		
+		        <p:menubar style="display:block; text-align:center">
+		            <p:submenu label="Enregistrement" icon="pi pi-fw pi-desktop">
+		                <p:menuitem value="Saisie" icon="pi pi-fw pi-pencil" url="index.xhtml" style="text-align:left"/>
+		                <p:divider />
+		                <p:menuitem value="Importer" icon="pi pi-fw pi-upload" url="#" style="text-align:left"/>
+		                <p:divider />
+		                <p:menuitem value="Camera" icon="pi pi-fw pi-camera" url="#" style="text-align:left"/>
+		            </p:submenu>
+		            
+					<p:menuitem value="Recherche" icon="pi pi-fw pi-search" url="#"/>
+					<p:menuitem value="Liste globale" icon="pi pi-fw pi-list" url="liste_globale.xhtml"/>
+					<p:menuitem value="Liste groupé" icon="pi pi-fw pi-align-justify" url="liste_groupe.xhtml"/>
+		        </p:menubar>
+		    </h:form>
+		</div>
+        </h:body>
+    </f:view>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+
+
+    <f:view contentType="text/html;charset=UTF-8" encoding="UTF-8">
+        <h:head>
+			
+        </h:head>
+        <h:body >
+        <ui:include src="menu.xhtml" />
+        <h:form>
+        <h1>Liste globale</h1>
+    	<div class="card">
+	        <p:dataTable var="plaque" value="#{dtBasicView.plaques}">
+	            <p:column headerText="Id">
+	                <h:outputText value="#{plaque.id}" />
+	            </p:column>
+	
+	            <p:column headerText="Plaque">
+	                <h:outputText value="#{plaque.value}" />
+	            </p:column>
+	
+	            <p:column headerText="Date">
+	                <h:outputText value="#{plaque.date}" />
+	            </p:column>
+	
+	        </p:dataTable>
+    </div>
+</h:form>
+         </h:body>
+    </f:view>
+</html>

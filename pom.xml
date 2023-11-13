@@ -46,7 +46,7 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
+        <dependency>
             <groupId>io.quarkiverse.primefaces</groupId>
             <artifactId>quarkus-primefaces</artifactId>
             <version>3.13.3</version>
@@ -56,6 +56,16 @@
             <artifactId>quarkus-primefaces-extensions</artifactId>
             <version>3.13.3</version>
         </dependency>
+    <dependency>
+    	<groupId>io.quarkus</groupId>
+    	<artifactId>quarkus-rest-client-reactive-jackson</artifactId>
+	</dependency>
+
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.26</version><!--$NO-MVN-MAN-VER$-->
+    </dependency>
   </dependencies>
   <build>
     <plugins>
